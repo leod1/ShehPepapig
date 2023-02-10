@@ -3,10 +3,12 @@ import com.example.product.pojo.Category;
 import com.example.product.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 import java.util.List;
 
 @RestController
+@EnableSwagger2
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping(value = ApiRegistration.CATEGORY_WS)
 public class CategoryWs {
