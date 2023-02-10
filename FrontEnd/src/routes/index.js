@@ -1,8 +1,8 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import IndexView from "@/views/IndexView.vue";
-import ProfileView from "@/views/CatalogueView.vue";
 import NotFoundView from "@/views/NotFoundView.vue";
 import CatalogueView from "@/views/CatalogueView.vue";
+import ProductView from "@/views/ProductView.vue";
 
 
 // eslint-disable-next-line no-sparse-arrays
@@ -15,9 +15,9 @@ const routes = [
     }, {
         path: '/catalogue/:id',
         name: 'profile',
-        component: ProfileView,
+        component: ProductView,
         props: true,
-        meta: {title: 'Profile - LifeLogger'}
+        meta: {title: 'Product - LifeLogger'}
     },
     , {
         path: '/catalogue',
