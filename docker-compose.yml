@@ -23,7 +23,7 @@ services:
     image: back-app:latest
     restart: always
     build:
-      context: ShehPepapig/BackEnd/
+      context: BackEnd/
     ports:
       - 8887:8080
 
@@ -33,4 +33,4 @@ services:
     ports:
       - 80:8080
     build:
-      context: ShehPepapig/FrontEnd/
+      context: FrontEnd/
