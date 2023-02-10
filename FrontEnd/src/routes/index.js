@@ -11,26 +11,22 @@ const routes = [
         path: '/',
         name: 'index',
         component: IndexView,
-        meta: {title: 'LifeLogger'}
     }, {
         path: '/catalogue/:id',
         name: 'profile',
         component: ProductView,
         props: true,
-        meta: {title: 'Product - LifeLogger'}
     },
     , {
         path: '/catalogue',
         name: 'catalogue',
         component: CatalogueView,
         props: true,
-        meta: {title: 'Catalogue - LifeLogger'}
     },
     {
         path: '/:catchAll(.*)',
         name: 'not-found',
         component: NotFoundView,
-        meta: {title: '404 - LifeLogger'}
     }
 
 ]
