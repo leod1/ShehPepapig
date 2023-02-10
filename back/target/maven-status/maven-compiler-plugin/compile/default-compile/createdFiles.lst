@@ -1,0 +1,14 @@
+com\example\product\service\CategoryService.class
+com\example\product\pojo\Category.class
+com\example\product\pojo\Product.class
+com\example\product\repository\ProductRepository.class
+com\example\product\service\ProductService.class
+com\example\product\PepaApplication.class
+com\example\product\service\impl\categoryServiceImp.class
+com\example\product\service\impl\productServiceImp.class
+com\example\product\ServletInitializer.class
+com\example\product\ws\ProductWs.class
+com\example\product\repository\CategoryRepository.class
+com\example\product\ws\CategoryWs.class
+com\example\product\configuration\SwaggerConfiguration.class
+com\example\product\ws\ApiRegistration.class
