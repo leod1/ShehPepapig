@@ -1,27 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="s"/>
+  <nav-bar v-if="renderComponent" :user="this.user"/>
+  <link href="/app.css" rel="stylesheet">
+  <div class="sm:w-2/3 mt-24 w-11/12 mx-auto">
+    <router-view/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import DishList from './components/DishList.vue';
+import NavBar from "@/components/NavBar.vue";
+import {RouterView} from "vue-router";
 
 export default {
+  watch: {},
   name: 'App',
   components: {
-    HelloWorld
-  }
+    NavBar,
+    RouterView
+  },
+  data() {
+    return {
+      renderComponent: true,
+    }
+  },
+  methods: {},
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
